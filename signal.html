@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Light Demo</title>
+  <link rel="stylesheet" href="/css/signal.css">
+</head>
+<body>
+  <div class="traffic-light">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+  <div class="buttons">
+    <button id="redBtn" onclick="changeState('red')">Red</button>
+    <button id="yellowBtn" onclick="changeState('yellow')">Yellow</button>
+    <button id="greenBtn" onclick="changeState('green')">Green</button>
+  </div>
+  
+  <div class="container"></div>
+  <div class="contain"></div>
+
+  <script src="js/signal.js"></script>
+</body>
+</html>

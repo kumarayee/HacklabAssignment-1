@@ -1,0 +1,98 @@
+body {
+    background-image: url('/assets/option/images/2207_w023_n003_2642b_p1_2642.jpg');
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 325px;
+    z-index: 1; /* Ensure it's above the container */
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.light.red.active {
+    background-color: red;
+}
+
+.light.yellow.active {
+    background-color: yellow;
+}
+
+.light.green.active {
+    background-color: green;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: -210px; /* Adjust for spacing below traffic light */
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button#redBtn {
+    background-color: red;
+    color: white;
+}
+
+button#yellowBtn {
+    background-color: yellow;
+    color: black;
+}
+
+button#greenBtn {
+    background-color: green;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    width: 6vw;
+    height: 25vh;
+    left: 47vw;
+    top: 28vh;
+    background-color: grey;
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.contain {
+    position: absolute;
+    width: 1vw;
+    height: 25vh;
+    left: 49.5vw;
+    top: 45vh;
+    background-color: grey;
+    border-radius: 6px;
+    z-index: -1;
+}
